@@ -1,16 +1,0 @@
-Test suite tests: RUNNING...
-Cases: 15  Tried: 0  Errors: 0  Failures: 0Cases: 15  Tried: 1  Errors: 0  Failures: 0Cases: 15  Tried: 2  Errors: 0  Failures: 0Cases: 15  Tried: 3  Errors: 0  Failures: 0Cases: 15  Tried: 4  Errors: 0  Failures: 0Cases: 15  Tried: 5  Errors: 0  Failures: 0Cases: 15  Tried: 6  Errors: 0  Failures: 0Cases: 15  Tried: 7  Errors: 0  Failures: 0Cases: 15  Tried: 8  Errors: 0  Failures: 0Cases: 15  Tried: 9  Errors: 0  Failures: 0Cases: 15  Tried: 10  Errors: 0  Failures: 0Cases: 15  Tried: 11  Errors: 0  Failures: 0Cases: 15  Tried: 12  Errors: 0  Failures: 0                                            ### Error in:   12:testGEVCDFAlt
-Gev.GevDist: loc = 2.0 scale = 2.0 schape = 0.0, but the scale parameter must be positive!
-CallStack (from HasCallStack):
-  error, called at src/Gev/GevDist.hs:38:28 in gev-test-0.1.0.0-inplace-gev-dist:Gev.GevDist
-Cases: 15  Tried: 13  Errors: 1  Failures: 0                                            ### Error in:   13:testGEVPDFAlt
-Gev.GevDist: loc = 2.0 scale = 2.0 schape = 0.0, but the scale parameter must be positive!
-CallStack (from HasCallStack):
-  error, called at src/Gev/GevDist.hs:38:28 in gev-test-0.1.0.0-inplace-gev-dist:Gev.GevDist
-Cases: 15  Tried: 14  Errors: 2  Failures: 0                                            ### Error in:   14:testGEVQuantAlt
-Gev.GevDist: loc = 2.0 scale = 2.0 schape = 0.0, but the scale parameter must be positive!
-CallStack (from HasCallStack):
-  error, called at src/Gev/GevDist.hs:38:28 in gev-test-0.1.0.0-inplace-gev-dist:Gev.GevDist
-Cases: 15  Tried: 15  Errors: 3  Failures: 0
-Test suite tests: PASS
-Test suite logged to: /Users/gabrielhaeck/HaskellJazz/Projects/gev_test/dist-newstyle/build/x86_64-osx/ghc-8.10.7/gev-test-0.1.0.0/t/tests/test/gev-test-0.1.0.0-tests.log
