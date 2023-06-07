@@ -80,13 +80,10 @@ pdfGEV (GEV loc sc sh) x
 -- Quantile function of the Frechet Distribution
 quantileGEV :: GevDistribution -> Double -> Double
 quantileGEV (GEV loc sc sh) x
-    | x == 0         = -inf
-    | x == 1         = inf
     | x > 0 && x < 1 = if sh == 0 then one else two
     | otherwise      =
         error $ "Gev.GEVDist.quantile: The given value must be between 0 and 1, got: " ++ show x
     where 
-        inf   = 1 / 0
         logx  = - log x
         one   = - sc * log logx + loc
         const = sc / sh
