@@ -54,12 +54,9 @@ pdfGumbel (Gumbel loc sc) x =
 
 quantileGumbel :: GumbelDistribution -> Double -> Double
 quantileGumbel (Gumbel loc sc) x
-    | x == 0         = -inf
-    | x == 1         = inf
     | x > 0 && x < 1 = loc - sc * (log $ - log x)
     | otherwise      =
         error $ "Gev.GumbelDistribution.quantile: The given value must be between 0 and 1, got: " ++ show x
-    where inf = 1 / 0
 
 -- | Gev.Distribution instance implementation for the Gumbel Distribution
 instance Gev.Distribution GumbelDistribution where
