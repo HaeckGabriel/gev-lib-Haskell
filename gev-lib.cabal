@@ -25,7 +25,7 @@ maintainer: haeckgabriel@gmail.com
 category: Statistics
 extra-source-files: CHANGELOG.md
 
-library gev-dist
+library gev-lib
     exposed-modules:  Gev, Gev.Gumbel, Gev.Frechet, Gev.Weibull, Gev.GevDist
 
     -- Modules included in this library but not exported.
