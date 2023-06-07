@@ -60,13 +60,10 @@ pdfFrechet (Frechet loc sc sh) x =
 -- Quantile function of the Frechet Distribution
 quantileFrechet :: FrechetDistribution -> Double -> Double
 quantileFrechet (Frechet loc sc sh) x
-    | x == 0         = -inf
-    | x == 1         = inf
     | x > 0 && x < 1 = loc + sc * (logexp ** pow)
     | otherwise      =
         error $ "Gev.FrechetDistribution.quantile: The given value must be between 0 and 1, got: " ++ show x
     where 
-        inf    = 1 / 0
         logexp = - log x
         pow    = - 1 / sh
 
