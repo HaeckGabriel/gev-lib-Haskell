@@ -2,4 +2,4 @@
 Distributional Quantities of the family of Extreme Value Distributions in Haskell
 
 # To do
-- [ ] add random generation to each distribution.
+- [ ] Add Haddock documentation (it wasn't added automatically?)
