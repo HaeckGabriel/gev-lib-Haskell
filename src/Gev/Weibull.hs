@@ -56,13 +56,10 @@ pdfWeibull (Weibull loc sc sh) x =
 
 quantileWeibull :: WeibullDistribution -> Double -> Double
 quantileWeibull (Weibull loc sc sh) x
-    | x == 0          = -inf
-    | x == 1          = inf
     | x > 0 && x < 1  = loc - sc * (logexp ** pow)
     | otherwise       =
         error $ "Gev.WeibullDistribution.quantile: The given value must be between 0 and 1, got: " ++ show x
     where
-        inf    = 1 / 0
         logexp = - log x
         pow    = 1 / sh
 
