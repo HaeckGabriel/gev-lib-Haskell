@@ -49,3 +49,4 @@ In fact, for $\zeta = 0$ we recover the Gumbel distribution, for $\zeta > 0$ we 
 
 # To do
 - [ ] Write better documentation.
+- [ ] Add Examples.
