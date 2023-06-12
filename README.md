@@ -48,4 +48,4 @@ $$t(x) = \exp \left ( - \frac{x - \mu}{\sigma}  \right ) \quad \text{if} \quad \
 In fact, for $\zeta = 0$ we recover the Gumbel distribution, for $\zeta > 0$ we recover the Fréchet distribution and for $\zeta < 0$ we have the Weibull distribution.
 
 # To do
-- [ ] Add Haddock documentation (it wasn't added automatically?)
+- [ ] Write better documentation.
