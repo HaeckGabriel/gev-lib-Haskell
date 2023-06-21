@@ -41,5 +41,5 @@ test-suite tests
   type: exitcode-stdio-1.0
   hs-source-dirs: .
   main-is: src/Tests/tests.hs
-  build-depends: base ^>=4.14.3.0, HUnit ^>=1.6, gev-dist
+  build-depends: base ^>=4.14.3.0, HUnit ^>=1.6, gev-lib
   default-language: Haskell2010
